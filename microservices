@@ -1,7 +1,7 @@
 Monolithic architecture:
 --in this, entire software is composed in a single peice
 --all componants are dependent on each other
---to sacel these kind of application, we have to run multiple copeies behind the load balancer.
+--to scalethese kind of application, we have to run multiple copeies behind the load balancer.
 
 drwabacks:
 --large and complex application, so difficult to understand and modify them which will result in slow development process.
