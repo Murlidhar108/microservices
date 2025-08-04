@@ -1,1 +1,40 @@
+Monolithic architecture:
+--in this, entire software is composed in a single peice
+--all componants are dependent on each other
+--to sacel these kind of application, we have to run multiple copeies behind the load balancer.
+
+drwabacks:
+--large and complex application, so difficult to understand and modify them which will result in slow development process.
+--to deploy the one new componant, we have to deploy omplete application again
+--each copy of application will have access to all data, which makes caching less effective and increase in memory consumption, because few might have high cpu and memory 
+consumpion.
+--all componants are tightly packed, which means if one services fails, entire application will fail
+-- monolithic application are very difficult to adopt new frameworks
+
+
+Microservices architechture:
+--is a software development approach where an application is structured as a collection of small, independent, and loosely coupled services, each responsible
+for a specific business capability
+-- in this, componants dont share data, but communicate through api.
+--they have their own data model and data.
+
+
+SERVICE DISCOVERY:
+-- task of this componant is to maintain the list of services  and which nodes are located to it to enables look up to find the endpoint for a services
+
+
+API GATEWAY  :
+-- entry point for the clients, which forward the call to appropriate servies in the backend
+
+FEATURE OF MICROSERVICES ARCHITECHTURE:
+--small focused--> can be remainted without any extra efforts.
+-- loosely coupled
+-- language neutral: example few code can be java  and few can be in python
+-- bounded context:one services dont need to understand implmentation of other servies
+
+Activator:
+feature that monitor and change, manage our application
+
+JPA:
+-- to save and retrive data.
 
